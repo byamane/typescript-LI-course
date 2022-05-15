@@ -1,6 +1,6 @@
 interface Contact {
     id: number;
-    name: string;
+    name: ContactName;
     birthDate?: Date;
 }
 
@@ -9,3 +9,6 @@ let primaryContact: Contact = {
     id: 12345,
     name: "Jamie Johnson",
 }
+
+// type alias -- doesn't create a new type (helps provide more context to types while maintaining original type)
+type ContactName = string
